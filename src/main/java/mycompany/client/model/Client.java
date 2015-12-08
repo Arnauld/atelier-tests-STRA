@@ -19,6 +19,14 @@ public class Client {
      */
     private DateTime activationDate;
 
+    public Client(String email) {
+        this.email = email;
+    }
+    public Client(String nom, String prenom, String email) {
+        this.email = email;
+        this.nom = nom;
+        this.prenom = prenom;
+    }
     public Client(String email, String nom, String prenom, AccountType accountType) {
         this.email = email;
         this.nom = nom;
@@ -38,20 +46,40 @@ public class Client {
         return email;
     }
 
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
     public String getNom() {
         return nom;
     }
 
-    public String getPrenom() {
+    public void setNom(String nom) {
+        this.nom = nom;
+    }
+
+    public String getThePrenom() {
         return prenom;
+    }
+
+    public void setPrenom(String prenom) {
+        this.prenom = prenom;
     }
 
     public AccountType getAccountType() {
         return accountType;
     }
 
+    public void setAccountType(AccountType accountType) {
+        this.accountType = accountType;
+    }
+
     public boolean isActif(){
         return activationDate!=null;
+    }
+
+    public void setActivationDate(DateTime activationDate) {
+        this.activationDate = activationDate;
     }
 
     @Override
