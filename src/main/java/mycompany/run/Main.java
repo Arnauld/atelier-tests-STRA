@@ -1,9 +1,9 @@
 package mycompany.run;
 
-import mycompany.vente_de_produits.action.EnregistrerUneVenteAction;
-import mycompany.vente_de_produits.action.RetrieveProduitsToSellAction;
-import mycompany.vente_de_produits.model.ProduitAVendre;
-import mycompany.vente_de_produits.model.ProduitVendu;
+import mycompany.ng.action.EnregistrerUneVenteAction;
+import mycompany.ng.action.RetrieveProduitsToSellAction;
+import mycompany.ng.model.ProduitAVendre;
+import mycompany.ng.model.ProduitVendu;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.math.BigDecimal;

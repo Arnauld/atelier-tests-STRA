@@ -1,3 +1,6 @@
 .idea
 *.iml
 target/
+uncommitted/.data*
+.data.mv.db
+.data.trace.db
